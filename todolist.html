@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,50 +20,54 @@
     <title>Todo List</title>
   </head>
   <body>
-    <div class="form-section mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col col-8 mx-auto">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Add new task</h5>
-                <form name="addTask">
-                  <input
-                    type="text"
-                    name="title"
-                    id="title"
-                    class="form-control"
-                    placeholder="Task title"
-                  />
-                  <input
-                    type="text"
-                    name="body"
-                    id="body"
-                    class="form-control mt-3"
-                    placeholder="Task body"
-                  />
-                  <button type="submit" class="btn btn-primary mt-4">
-                    Add task
-                  </button>
-                </form>
+    <div class="container-fluid b-todo">
+      <div class="form-section mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col col-8 mx-auto">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Add new task</h5>
+                  <form name="addTask">
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      class="form-control"
+                      placeholder="Task title"
+                    />
+                    <input
+                      type="text"
+                      name="body"
+                      id="body"
+                      class="form-control mt-3"
+                      placeholder="Task body"
+                    />
+                    <button type="submit" class="btn-add-task btn">
+                      Add task
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <button class="btn-all-tasks">
-      All tasks
-    </button>
-    <button class="btn-unfinished">
-      Unfinished tasks
-    </button>
-    <button class="btn-finished">
-      Completed tasks
-    </button>
-    <div class="tasks-list-section mt-5">
-      <div class="container">
-        <ul class="list-group"></ul>
+      <div class="btn-all">
+        <button class="btn-all-tasks btn-sort">
+          All tasks
+        </button>
+        <button class="btn-unfinished btn-sort">
+          Unfinished tasks
+        </button>
+        <button class="btn-finished btn-sort">
+          Completed tasks
+        </button>
+      </div>
+      <div class="tasks-list-section">
+        <div class="container">
+          <ul class="list-group"></ul>
+        </div>
       </div>
     </div>
     <script src="todolist.js"></script>

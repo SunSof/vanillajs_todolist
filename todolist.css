@@ -1,3 +1,80 @@
+.b-todo {
+  padding: 30px;
+  background: url("img.jpg") rgba(253, 180, 180, 0.466);
+  background-blend-mode: lighten;
+  z-index: -1;
+}
+.card {
+  background: rgb(243, 220, 90);
+  border-radius: 40px;
+  border: none;
+}
+
+.form-control {
+  background: rgb(252, 241, 183);
+  font-family: "Raleway", sans-serif;
+}
+
+
+.list-group-item {
+  background-color: rgb(255, 214, 225);
+  z-index: 1;
+  border-radius: 40px;
+  border: none;
+}
+.list-group-item:first-child {
+  border-radius: 40px;
+}
+.list-group-item:last-child {
+  border-radius: 40px;
+}
+.list-group {
+  padding: 20px;
+}
 .color {
   background-color: rgb(253, 255, 140);
+  z-index: 2;
+}
+
+
+
+.span-text {
+  font-family: "Indie Flower";
+  font-size: 23px;
+}
+.p-text {
+  font-family: "Raleway", sans-serif;
+}
+.card-title {
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+.btn-all {
+  text-align: center;
+  padding-top: 20px;
+}
+.btn {
+  padding: 7px;
+  border-radius: 15px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+}
+.btn-sort {
+  background: rgb(243, 220, 90);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+.btn-add-task {
+  margin-top: 15px;
+  background: rgb(233, 156, 175);
+}
+.delete-btn {
+  background: rgb(243, 133, 90);
+  margin: 10px;
+}
+.btn-warning {
+  background: rgb(243, 189, 90);
 }

@@ -48,11 +48,11 @@ const tasks = [
 
   //btn
   const btnAll = document.querySelector(".btn-all-tasks");
-  btnAll.classList.add("btn", "btn-success", "ml-3");
+  btnAll.classList.add("btn");
   const btnUnfinished = document.querySelector(".btn-unfinished");
-  btnUnfinished.classList.add("btn", "btn-success", "ml-2", "unfinished");
+  btnUnfinished.classList.add("btn", "unfinished");
   const btnCompleted = document.querySelector(".btn-finished");
-  btnCompleted.classList.add("btn", "btn-success", "ml-2", "finished");
+  btnCompleted.classList.add("btn", "finished");
 
   //events
   renderAllTasks(objOfTasks);
@@ -111,29 +111,29 @@ const tasks = [
 
     const span = document.createElement("span");
     span.textContent = title;
-    span.style.fontWeight = "bold";
+    span.classList.add("span-text");
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete task";
-    deleteBtn.classList.add("btn", "btn-danger", "ml-auto", "delete-btn");
+    deleteBtn.classList.add("btn","delete-btn");
 
     const performedBtn = document.createElement("button");
     performedBtn.textContent = "Task completed";
     performedBtn.classList.add(
       "btn",
       "btn-warning",
-      "mr-auto",
       "performed-btn"
     );
 
     const article = document.createElement("p");
     article.textContent = body;
-    article.classList.add("mt-2", "w-100");
+    article.classList.add("mt-2", "w-100", "p-text");
 
     li.appendChild(span);
-    li.appendChild(deleteBtn);
     li.appendChild(article);
     li.appendChild(performedBtn);
+    li.appendChild(deleteBtn);
+    
 
     if (completed) {
       li.classList.add("color");
