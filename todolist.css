@@ -1,5 +1,5 @@
 .b-todo {
-  padding: 30px;
+  padding: 50px 50px 120px;
   background: url("img.jpg") rgba(253, 180, 180, 0.466);
   background-blend-mode: lighten;
   z-index: -1;
