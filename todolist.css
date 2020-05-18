@@ -4,18 +4,22 @@
   background-blend-mode: lighten;
   z-index: -1;
 }
+/* "add new task" card style */
 .card {
   background: rgb(243, 220, 90);
   border-radius: 40px;
   border: none;
 }
-
+.card-title {
+  font-family: "Raleway", sans-serif;
+}
 .form-control {
   background: rgb(252, 241, 183);
   font-family: "Raleway", sans-serif;
 }
 
 
+/* list card style */
 .list-group-item {
   background-color: rgb(255, 214, 225);
   z-index: 1;
@@ -37,7 +41,7 @@
 }
 
 
-
+/* text list card style */
 .span-text {
   font-family: "Indie Flower";
   font-size: 23px;
@@ -45,12 +49,10 @@
 .p-text {
   font-family: "Raleway", sans-serif;
 }
-.card-title {
-  font-family: "Raleway", sans-serif;
-}
 
 
 
+/* btn style */
 .btn-all {
   text-align: center;
   padding-top: 20px;

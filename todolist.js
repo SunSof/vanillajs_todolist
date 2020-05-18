@@ -66,7 +66,7 @@ const tasks = [
 
   function renderAllTasks(tasksList) {
     if (!tasksList) {
-      console.error("Передайте список задач");
+      console.error("Submit task list!");
       return;
     }
 
@@ -149,7 +149,7 @@ const tasks = [
     const bodyValue = inputBody.value;
 
     if (!titleValue || !bodyValue) {
-      alert("Введите title и body");
+      alert("Enter the title and body");
       return;
     }
     const task = createNewTask(titleValue, bodyValue);
@@ -172,7 +172,7 @@ const tasks = [
 
   function deleteTask(id) {
     const { title } = objOfTasks[id];
-    const isConfirm = confirm(`Точно ли Вы хотите удалить задачу: ${title}`);
+    const isConfirm = confirm(`Do you want to delete a task: ${title}`);
     if (!isConfirm) return isConfirm;
     delete objOfTasks[id];
     return isConfirm;
@@ -215,7 +215,7 @@ const tasks = [
     );
 
     const span = document.createElement("span");
-    span.textContent = "Список задач пуст!";
+    span.textContent = "The task list is empty!";
     span.style.fontWeight = "bold";
 
     li.appendChild(span);
