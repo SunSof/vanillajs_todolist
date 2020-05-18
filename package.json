@@ -1,6 +1,6 @@
 {
   "homepage": "https://sunsof.github.io/vanillajs_todolist/",
-  "name": "ToDoList",
+  "name": "todolist",
   "version": "1.0.0",
   "description": "Simple Parcel Sandbox",
   "main": "index.html",
