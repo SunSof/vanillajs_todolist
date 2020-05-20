@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .b-todo {
   padding: 50px 50px 120px;
   background: url("img.jpg") rgba(253, 180, 180, 0.466);
@@ -17,7 +19,6 @@
   background: rgb(252, 241, 183);
   font-family: "Raleway", sans-serif;
 }
-
 
 /* list card style */
 .list-group-item {
@@ -40,7 +41,6 @@
   z-index: 2;
 }
 
-
 /* text list card style */
 .span-text {
   font-family: "Indie Flower";
@@ -49,8 +49,6 @@
 .p-text {
   font-family: "Raleway", sans-serif;
 }
-
-
 
 /* btn style */
 .btn-all {

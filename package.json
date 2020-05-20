@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "run": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.6.1",
+    "sass": "^1.26.5"
+  }
+}
