@@ -11,7 +11,7 @@
   "devDependencies": {
     "@babel/core": "7.2.0",
     "cssnano": "^4.1.10",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.6.1",
     "sass": "^1.26.5"
   }
