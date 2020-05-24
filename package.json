@@ -1,9 +1,14 @@
 {
+  "homepage": "https://sunsof.github.io/vanillajs_todolist/",
+  "name": "vanillajs_todolist",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "main": "index.html",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url https://sunsof.github.io/vanillajs_todolist/"
   },
   "dependencies": {
     "run": "^1.4.0"
