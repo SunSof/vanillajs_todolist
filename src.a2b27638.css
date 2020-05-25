@@ -14,11 +14,22 @@
 
 .card-title {
   font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .card-title {
+    text-align: left;
+  }
 }
 
 .form-control {
   background: #fcf1b7;
   font-family: "Raleway", sans-serif;
+}
+
+.btn-add-task {
+  margin-top: 15px;
+  background: #e99caf;
 }
 
 /* list card style */
@@ -37,8 +48,10 @@
   border-radius: 40px;
 }
 
-.list-group {
-  padding: 20px;
+@media (min-width: 768px) {
+  .list-group {
+    padding: 20px;
+  }
 }
 
 .color {
@@ -49,11 +62,24 @@
 /* text list card style */
 .span-text {
   font-family: "Indie Flower";
-  font-size: 23px;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .span-text {
+    text-align: left;
+    font-size: 23px;
+  }
 }
 
 .p-text {
   font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .p-text {
+    font-size: 16px;
+  }
 }
 
 /* btn style */
@@ -67,6 +93,7 @@
   border-radius: 15px;
   border: none;
   font-family: "Raleway", sans-serif;
+  position: inherit;
 }
 
 .btn-sort {
@@ -74,11 +101,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 10px;
-}
-
-.btn-add-task {
-  margin-top: 15px;
-  background: #e99caf;
 }
 
 .delete-btn {
